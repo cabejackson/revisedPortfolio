@@ -1,0 +1,273 @@
+/*---- Page Layout ----*/
+.module {
+    all: unset;
+  }
+
+html {
+    /* margin: 0px;
+    padding: 0px; */
+    background-color: #3eb2fc;
+}
+body{
+    background-color: #3eb2fc;
+    margin: 0px;
+}
+*{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+/* --- General --- */ 
+
+main {
+    padding: 20px 0;
+  }
+  
+  section {
+    margin-bottom: 50px;
+  }
+  
+  h1 {
+    margin: 0 0 30px 10px;
+    background-color: #566171;
+    padding: 40px;
+    
+  }
+
+  header h1{
+    margin: 0px;
+    color: #ffecdb;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+  
+  h2 {
+    margin: 0 10px;
+    border-bottom: 1px solid;
+    border-bottom-color: #272b33;
+    color: #272b33;
+    
+  }
+  
+  h3 {
+    margin: 12px 0;
+    border-bottom: 1px solid black;
+    color: #272b33;
+    text-align: center;
+  }
+
+  p {
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #ffecdb;
+}
+
+a{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: unset;
+
+
+}
+  
+/*---- header formatting ----*/
+header{
+    display: block;
+    background-color: #566171;
+    padding: 30px;
+}
+
+
+header nav {
+    /* changed to flex bc default is block */
+    display: flex;
+    /* used to center elements defined as 'display: flex' */
+    justify-content: center;
+}
+
+header nav ul {
+    /* changed to flex bc default is block */
+    display: flex;
+    flex-direction: row;
+    /* removes default bullet points */
+    list-style: none;
+    /* removes the default padding to the left  */
+    padding-left: 0;
+}
+
+header nav ul li a {
+    /* changed to flex bc default is block */
+    display: flex;
+    /* removes defualt underline from link */
+    text-decoration: none;
+    /* color of link: white */
+    color: #ffecdb;
+    /* makes gap between links */
+    margin: 0 20px 0 0;
+    /* pushes links down by 50pixles */
+    padding-top: 0px;
+}
+
+header nav ul li:last-child a {
+    /* removes the margin to the right of the last
+    anchor tag so that nav appears centered  */
+    margin-right: 0;
+}
+
+/* ----List Item Stylings---- */
+
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: disc;
+    margin-top: unset;
+    margin-bottom: unset;
+    margin-left: 20px;
+    margin-right: unset;
+    padding-left: unset;
+}
+
+
+ul li {
+    display: flex;
+    /* removes default bullet points */
+    list-style: none;
+    /* removes defualt underline from link */
+    text-decoration: none;
+    font-size: 16px;  
+    color: #ffecdb; 
+    display: inline-block
+}
+
+ul li a {
+    /* changed to flex bc default is block */
+    display: flex;   
+}
+
+/* ----form styling---- */
+form,
+label {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+form input,
+form textarea {
+  width: 60%;
+  /* background-color: #566171; -- might change this */
+  height: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:#566171;
+  justify-content: center;
+  font-size: 20px;
+  
+}
+
+label{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color:#ffecdb;
+
+}
+
+form textarea {
+  height: 160px;
+}
+
+/*----Button Styling---- */
+button {
+    padding: 10px 16px;
+    border-radius: 15px;
+    border: solid #ffecdb;
+    background-color: transparent;
+    color: #ffecdb;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: black
+}
+
+
+
+  /* --- Groups & Items --- */
+  
+  .group {
+    display: flex;
+    flex-direction: column
+  }
+  
+  .item {
+    flex: 1;
+    margin: 10px  
+
+  }
+  .item img {
+    display: flex;
+    width: 100%;
+    margin: 0px;
+}
+
+@media all and (min-width: 600px) {
+    header h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+    ul li{
+        font-size: 30px;
+    }
+
+    form {
+        font-size: 48px;
+    }
+    
+    form input,
+    form textarea {
+        width: 60%;
+         /* background-color: #566171; -- might change this */
+        height: 40px;
+        font-size: 30px;
+    }
+
+    form textarea {
+        height: 160px;
+    }
+    label{
+        font-size: 30px;
+    }
+
+    a{
+        font-size: 30px;
+    }
+    button {
+        padding: 10px 16px;
+        border-radius: 15px;
+        border: solid #ffecdb;
+        background-color: transparent;
+        color: #ffecdb;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 30px;
+    }
+
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- links HTML to styles.css -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Portfolio Project</title>
+</head>
+
+<body>
+    <!--Header & Nav-->
+    <header>
+        <h1>Caleb Jackson</h1>
+
+        <nav>
+            <ul id="menu">
+                <!-- links nav buttons to dif parts of the page -->
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+    <main>
+        <!-- Intro Section that includes : 
+(1) Who they are -yes: Caleb Jackson
+(2) Where they are -yes: Washington, D.C.
+(3) What you do and what makes you special -yes: neuro 
+-->
+        <section id="intro">
+            <h2>Welcome</h2>
+            <!-- Group 0 with 2 items -->
+            <div class="group">
+                <div class="item">
+                    <img src="Pictures/sittingFlag.jpeg" width="300" alt="Caleb sitting with Trans Flag">
+                </div>
+                <div class="group">
+                    <h2>Introduction</h2>
+                    <div class="item">
+                        <p>Hi, my name is Caleb Jackson!
+                            I use both he and they pronouns and
+                            I'm a software engineering student
+                            based in Washington, D.C.
+                            I'm excited to combine my neuroscience
+                            background with coding and web development!
+                        </p>
+                    </div>
+        </section>
+
+
+        <!--About Me section that includes : 
+(1) demonstrate your passion for the web(y)
+(2) demonstrate desire to work on a team with great programmers(y)
+(3) show your personality outside of coding(y)
+(4) List of services you can (or want to) provide a client.(y)-->
+
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="group">
+                <div class="item">
+                    <img src="Pictures/profilePicCopy.jpg" width="300" alt="Caleb's profile picture">
+                </div>
+            </div>
+
+            <div class="group">
+
+                <div class="item">
+                    <p>I first learned about code while teaching STEM afterschool at the Boys & Girls Club in 2015.
+                        However, I never really understood how expansive and impactful tech careers were at the
+                        time.</p>
+
+                    <p>Throughout college, I worked as a residential assistant, an organic chemistry tutor and a
+                        business operations coordinator for conference services.</p>
+
+                    <p><a href="https://youtu.be/VC73oMLIWhI" target="_blank"> I also took on multiple odd jobs too!
+                        </a>
+                    </p>
+
+                    <p>I decided to join Thinkful, a coding bootcamp, to sharpen my web developer skills - I’ve
+                        definitely learned (and I’m still learning) a LOT!</p>
+
+                    <p>Services I can provide for clients in the future: animations, neat websites and interactive
+                        phone apps. Specifically, I have experience working with Javascript, Python, Ruby and React.</p>
+
+                    <p>What I’m looking forward to:</p>
+                    <p>Working with a team of other innovators who</p>
+                    <!-- unorganized list of values -->
+                    <ul>
+                        <li>-value diversity,</li>
+                        <li>-focus on accessibility,</li>
+                        <li>-build easy to use and impactful products and/or services.</li>
+                    </ul>
+                    <p>I’d love to connect with you! </p>
+                    <p><a href="#contact-me">Let’s get acquainted!</a> 
+                        
+                </div>
+            </div>
+        </section>
+
+        <!-- Project section:
+(1) Project Title -yes: Quiz App
+(2) Project Description -yes: within <p> tags
+(3) link to Project -yes: within <a> tags
+ -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="group">
+                <div class="item">
+                    <p> Here's some of my projects that I've completed.
+                        If I had completed some projects, then I would explain how I used
+                        Javascript, React, and Python knowledge to build these projects.</p>
+
+                </div>
+            </div>
+
+            <div class="group">
+                <div class="item">
+                    <img class=img src="Pictures/quizScreenshot2.jpg" width="300" alt="End results of The Office Quiz">
+
+                    <div class="item">
+                        <h3>Quiz App</h3>
+                        <p>This would be an example of a project I've completed.
+                            A quiz app could be useful for testing users knowledge on a specific topic.
+                            I will use Javascript and HTML for this project.
+                            I will learn how to utilize jQuery while building this project.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <a href="https://www.youtube.com/c/BowtiesBooks/about" target="_blank">Here's a link to this
+                            project!</a>
+
+                        <a href="https://github.com/cabejackson/standard-deck.git" target="_blank">Here's the Github
+                            repo for the project!</a>
+
+                    </div>
+
+        </section>
+
+
+        <!-- Contact Section:
+(1)email address
+(2)link to github
+(3)link to linkedin
+(4)functional contact form -->
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="group">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/caleb-jackson-cabe/" target=”_blank”>LinkedIn</a></li>
+                    <li><a href="https://github.com/cabejackson" target=”_blank”>Github</a></li>
+                    <li><a href="mailto:emailcabejackson@gmail.com" target=”_blank”>Email</a></li>
+                </ul>
+
+                <h3>Let's Connect</h3>
+
+                <div class="group">
+                    <form action="https://formspree.io/xknqykzd" method="post">
+                        <!-- added the * REQUIRED * input elements here -->
+                        <div class="item">
+                            <label for="username">Your Name: </label>
+                            <input id="username" type="text" name="name" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="item">
+                            <label for="email-address">Your Email: </label>
+                            <input id="email-address" type="text" name="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="item">
+                            <label for="form-message">Your message: </label>
+                            <textarea id="form-message" name="message" placeholder="What would you like to chat about?"
+                                required></textarea>
+                        </div>
+
+                        <div class="item">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
